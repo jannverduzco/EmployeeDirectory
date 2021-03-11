@@ -1,10 +1,10 @@
 import React from "react";
-import Directory from "./components/pages/Directory";
+import Directory from "./pages/Directory";
 
 
 
 function App() {
-  return <Directory type="danger">Invalid user id or password</Directory>;
+  return <Directory>Invalid user id or password</Directory>;
 }
 
 export default App;
