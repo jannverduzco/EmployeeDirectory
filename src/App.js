@@ -1,18 +1,27 @@
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
+import Container from "./components/Container";
+import EmployeeSearch from "./components/EmployeeSearch";
+import EmployeeDisplay from "./components/EmployeeDisplay";
+import API from "./utils/API";
 
 function App() {
+  const [employeeState, setEmployeeState] = useState([]);
+
+  useEffect(() => {
+    API.getEmployees().then(res => {setEmployeeState(res.data.results)})
+  }, []);
   return (
-    <Router>
-      <div>
-        <Wrapper>
-          
-        </Wrapper>
-        <Footer />
-      </div>
-    </Router>
+    <div>
+      <Wrapper>
+        <Container>
+          <EmployeeSearch />
+          <EmployeeDisplay />
+        </Container>
+      </Wrapper>
+      <Footer />
+    </div>
   );
 }
 
