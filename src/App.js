@@ -1,10 +1,19 @@
 import React from "react";
-import Directory from "./pages/Directory";
-
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Footer from "./components/Footer";
+import Wrapper from "./components/Wrapper";
 
 function App() {
-  return <Directory>Invalid user id or password</Directory>;
+  return (
+    <Router>
+      <div>
+        <Wrapper>
+          
+        </Wrapper>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
 export default App;
