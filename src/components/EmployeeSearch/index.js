@@ -1,7 +1,23 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import Container from "../components/Container";
-import SearchForm from "../components/SearchForm";
-import SearchResults from "../components/SearchResults";
-import Alert from "../components/Alert";
 
+
+
+class EmployeeSearch extends Component {
+  state = {
+    search: "",
+    results: [],
+  };
+
+  componentDidMount() {
+    this.filterEmployees("employees");
+  }
+
+  filterEmployees = (query) => {
+    API.getEmployees(query)
+      .then((res) => this.setState({ results: res.data}))
+      .catch((err) => console.log(err));
+  };
+}
+
+export default EmployeeSearch;
