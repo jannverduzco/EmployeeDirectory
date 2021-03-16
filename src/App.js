@@ -1,5 +1,5 @@
 import React from "react";
-import Wrapper from "./Components/Wrapper";
+import Header from "./Components/Header";
 import Container from "./Components/Container";
 import Footer from "./Components/Footer";
 import EmployeeSearch from "./Components/EmployeeSearch";
@@ -7,7 +7,7 @@ import EmployeeSearch from "./Components/EmployeeSearch";
 function App() {
   return (
     <div>
-      <Wrapper />
+     <Header />
       <Container>
         <EmployeeSearch />
       </Container>
