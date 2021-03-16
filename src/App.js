@@ -1,13 +1,16 @@
 import React from "react";
-import Wrapper from "./components/Wrapper";
-import Container from "./components/Container";
-import Footer from "./components/Footer";
+import Wrapper from "./Components/Wrapper";
+import Container from "./Components/Container";
+import Footer from "./Components/Footer";
+import EmployeeSearch from "./Components/EmployeeSearch";
 
 function App() {
   return (
     <div>
       <Wrapper />
-      <Container />
+      <Container>
+        <EmployeeSearch />
+      </Container>
       <Footer />
     </div>
   );
