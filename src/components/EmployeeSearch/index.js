@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import EmployeeDisplayResults from "../EmployeeDisplayResults";
+import "./style.css";
 
 class EmployeeSearch extends Component {
   state = {
@@ -27,18 +28,16 @@ class EmployeeSearch extends Component {
 
   render() {
     return (
-      <div>
-        <EmployeeDisplayResults>
-          <div className="row">
-            <div className="col-sm">Image</div>
-            <div className="col-sm">Name</div>
-            <div className="col-sm">Email</div>
-            <div className="col-sm">Phone</div>
-            <div className="col-sm">Date of Birth</div>
-            <div className="col-sm">Address</div>
-          </div>
-        </EmployeeDisplayResults>
-      </div>
+      <EmployeeDisplayResults>
+        <div className="row">
+          <div className="col-sm">Image</div>
+          <div className="col-sm">Name</div>
+          <div className="col-sm">Email</div>
+          <div className="col-sm">Phone</div>
+          <div className="col-sm">Date of Birth</div>
+          <div className="col-sm">Address</div>
+        </div>
+      </EmployeeDisplayResults>
     );
   }
 }
