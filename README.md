@@ -11,7 +11,7 @@
 
 
 ## Description 
-
+The Employee Directory is a React App that allows the user to view employees. This application also allows the user to sort based on the NAME row or search for an employee.
 
 ## User Story
 ```
@@ -31,23 +31,11 @@
 * CSS
 * JavaScript
 * NPM package(Package.json)
-   * Express
-   * mongoose
-   * morgan
-   * compression
+   * React
+   * React DOM
+   * Bootstrap
 * Heroku (Deployment)
 * ESLint (Testing code)
-
-## Mock-Up 
-
-### Employee Directory Site
-![GitHub Logo]()
-
-### 
-![GitHub Logo]()
-
-### 
-![GitHub Logo]()
 
 ## Live Link (Heroku)
 ### https://empl-directory.herokuapp.com/
