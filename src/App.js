@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "./Components/Header";
-import Container from "./Components/Container";
-import Footer from "./Components/Footer";
-import EmployeeSearch from "./Components/EmployeeSearch";
-import Wrapper from "./Components/Wrapper";
+import Header from "./components/Header";
+import Container from "./components/Container";
+import Footer from "./components/Footer";
+import EmployeeSearch from "./components/EmployeeSearch";
+import Wrapper from "./components/Wrapper";
 
 function App() {
   return (
